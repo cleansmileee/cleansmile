@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanSmile | Irrigadores bucales</title>
+  <meta name="description" content="Irrigadores bucales CleanSmile: limpieza profunda, ideal para ortodoncia y encías sensibles.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>CleanSmile</h1>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section id="inicio" class="hero">
+  <div>
+    <h2>Limpieza dental profesional desde casa</h2>
+    <p>Elimina restos donde el cepillo no llega. Ideal para ortodoncia, implantes y encías sensibles.</p>
+    <a href="#productos" class="boton">Ver productos</a>
+  </div>
+</section>
+
+<section class="beneficios">
+  <h2>¿Por qué CleanSmile?</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Limpieza profunda</h3>
+      <p>Elimina placa y restos en zonas difíciles.</p>
+    </div>
+    <div class="card">
+      <h3>Perfecto con ortodoncia</h3>
+      <p>Más eficaz que el hilo dental tradicional.</p>
+    </div>
+    <div class="card">
+      <h3>Fácil y cómodo</h3>
+      <p>Uso rápido y portátil en tu día a día.</p>
+    </div>
+  </div>
+</section>
+
+<section id="productos" class="destacados">
+  <h2>Productos</h2>
+  <div class="grid">
+
+    <div class="producto">
+      <img src="https://via.placeholder.com/250" alt="Irrigador portátil">
+      <h3>Irrigador portátil</h3>
+      <p>39,99 €</p>
+      <button onclick="comprar()">Comprar</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://via.placeholder.com/250" alt="Irrigador premium">
+      <h3>Irrigador premium</h3>
+      <p>59,99 €</p>
+      <button onclick="comprar()">Comprar</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <h2>Preguntas frecuentes</h2>
+
+  <div class="faq-item">
+    <h3>¿Sustituye al hilo dental?</h3>
+    <p>Es una alternativa muy eficaz, especialmente en personas con ortodoncia.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>¿Hace daño?</h3>
+    <p>No. Tiene diferentes niveles de presión adaptables.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>¿Cada cuánto se usa?</h3>
+    <p>Se recomienda uso diario, preferiblemente por la noche.</p>
+  </div>
+
+</section>
+
+<section id="contacto" class="contacto">
+  <h2>Contacto</h2>
+  <form onsubmit="enviarFormulario(event)">
+    <input type="text" placeholder="Nombre" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 CleanSmile - Todos los derechos reservados</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
