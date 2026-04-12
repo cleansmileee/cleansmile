@@ -1,105 +1,432 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CleanSmile | Irrigadores bucales</title>
-  <meta name="description" content="Irrigadores bucales CleanSmile: limpieza profunda, ideal para ortodoncia y encías sensibles.">
-  <link rel="stylesheet" href="/cleansmile/style.css"></head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CleanSmile | Irrigadores bucales e higiene bucodental</title>
+  <meta
+    name="description"
+    content="Irrigadores bucales para una limpieza profunda, cómoda y eficaz. Ideales para ortodoncia, implantes y encías sensibles."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="brand">
+        <img src="logo-mini.png" alt="Logo CleanSmile" class="brand-logo" />
+        <span>Cleansmile</span>
+      </a>
 
-<header>
-  <h1>CleanSmile</h1>
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#productos">Productos</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        ☰
+      </button>
 
-<section id="inicio" class="hero">
-  <div>
-    <h2>Limpieza dental profesional desde casa</h2>
-    <p>Elimina restos donde el cepillo no llega. Ideal para ortodoncia, implantes y encías sensibles.</p>
-    <a href="#productos" class="boton">Ver productos</a>
-  </div>
-</section>
-
-<section class="beneficios">
-  <h2>¿Por qué CleanSmile?</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Limpieza profunda</h3>
-      <p>Elimina placa y restos en zonas difíciles.</p>
+      <nav class="nav-links" id="nav-links">
+        <a href="#beneficios">Beneficios</a>
+        <a href="#productos">Productos</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#productos" class="btn btn-primary nav-cta">Comprar</a>
+      </nav>
     </div>
-    <div class="card">
-      <h3>Perfecto con ortodoncia</h3>
-      <p>Más eficaz que el hilo dental tradicional.</p>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow">Tecnologia que cuida tu sonrisa</span>
+          <h1>Irrigadores bucales para una limpieza profunda, cómoda y eficaz</h1>
+          <p>
+            Mejora tu rutina diaria con una higiene más completa. Ideales para
+            ortodoncia, implantes y encías sensibles, con un diseño moderno y
+            fácil de usar en casa o de viaje.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#productos" class="btn btn-primary">Ver productos</a>
+            <a href="#funciona" class="btn btn-secondary">Cómo funciona</a>
+          </div>
+
+          <div class="hero-trust">
+            <div>Pago seguro</div>
+            <div>Envío rápido</div>
+            <div>Atención al cliente</div>
+            <div>Garantía de satisfacción</div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img
+            src="producto-hero.jpg"
+            alt="Irrigador bucal CleanSmile"
+            class="hero-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-items">
+        <div class="trust-item">
+          <h3>Diseño premium</h3>
+          <p>Minimalista, cómodo y pensado para el uso diario.</p>
+        </div>
+        <div class="trust-item">
+          <h3>Rutina más eficaz</h3>
+          <p>Ayuda a limpiar zonas donde el cepillo no llega fácilmente.</p>
+        </div>
+        <div class="trust-item">
+          <h3>Ideal para casos específicos</h3>
+          <p>Muy útil en ortodoncia, implantes y encías delicadas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="beneficios">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Por qué elegir CleanSmile</span>
+          <h2>Una forma más cómoda y moderna de cuidar tu boca</h2>
+          <p>
+            Nuestros irrigadores están pensados para ayudarte a completar tu
+            higiene diaria con más comodidad, precisión y confianza.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="card">
+            <div class="icon-circle">✓</div>
+            <h3>Limpieza profunda</h3>
+            <p>
+              Ayuda a eliminar restos de comida y suciedad acumulada en zonas
+              complicadas.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon-circle">⌁</div>
+            <h3>Más cómodo que el hilo dental</h3>
+            <p>
+              Una alternativa práctica para complementar tu rutina de higiene de
+              forma rápida.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon-circle">🦷</div>
+            <h3>Apto para ortodoncia e implantes</h3>
+            <p>
+              Perfecto para quienes necesitan una limpieza más precisa en su día
+              a día.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon-circle">⚡</div>
+            <h3>Fácil de usar</h3>
+            <p>
+              Diseños intuitivos, ligeros y cómodos para una rutina sencilla en
+              menos tiempo.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="funciona">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Cómo funciona</span>
+          <h2>Una rutina simple en pocos pasos</h2>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">1</span>
+            <h3>Llena el depósito</h3>
+            <p>Añade agua templada y coloca la boquilla adecuada.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">2</span>
+            <h3>Elige el modo</h3>
+            <p>Selecciona la intensidad que mejor se adapte a ti.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">3</span>
+            <h3>Dirige el chorro</h3>
+            <p>Limpia suavemente entre dientes y línea de encías.</p>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">4</span>
+            <h3>Completa tu rutina</h3>
+            <p>Úsalo como complemento a tu cepillado habitual.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="productos">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Nuestros productos</span>
+          <h2>Elige el modelo que mejor encaja contigo</h2>
+          <p>
+            Diseño, funcionalidad y cuidado bucodental en una selección pensada
+            para distintos estilos de vida.
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card featured">
+            <span class="product-badge">Más vendido</span>
+            <img src="producto-1.jpg" alt="Irrigador portátil CleanSmile" />
+            <h3>Irrigador portátil</h3>
+            <p class="product-text">
+              Compacto, ligero y fácil de transportar. Ideal para la rutina
+              diaria y para llevar de viaje.
+            </p>
+            <ul class="product-features">
+              <li>3 modos de presión</li>
+              <li>Diseño portátil</li>
+              <li>Fácil de recargar</li>
+              <li>Recomendado para ortodoncia</li>
+            </ul>
+            <div class="product-footer">
+              <span class="price">39,99 €</span>
+              <button class="btn btn-primary buy-btn" data-product="Irrigador portátil">
+                Comprar ahora
+              </button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="producto-2.jpg" alt="Irrigador premium CleanSmile" />
+            <h3>Irrigador premium</h3>
+            <p class="product-text">
+              Más completo, mayor capacidad y una experiencia superior para una
+              higiene más avanzada.
+            </p>
+            <ul class="product-features">
+              <li>5 modos de uso</li>
+              <li>Mayor depósito</li>
+              <li>Boquillas incluidas</li>
+              <li>Ideal para encías sensibles</li>
+            </ul>
+            <div class="product-footer">
+              <span class="price">59,99 €</span>
+              <button class="btn btn-primary buy-btn" data-product="Irrigador premium">
+                Comprar ahora
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="opiniones">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Opiniones</span>
+          <h2>Una experiencia pensada para generar confianza</h2>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <p>
+              “Muy cómodo de usar y da sensación de limpieza real. Se nota mucho
+              si llevas ortodoncia.”
+            </p>
+            <strong>Laura M.</strong>
+          </article>
+
+          <article class="review-card">
+            <p>
+              “La web transmite mucha seriedad y el producto cumple con lo que
+              promete. Repetiría.”
+            </p>
+            <strong>Andrea P.</strong>
+          </article>
+
+          <article class="review-card">
+            <p>
+              “Me gusta el diseño, la facilidad de uso y que no ocupa casi
+              espacio en el baño.”
+            </p>
+            <strong>Carlos R.</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Resolvemos tus dudas antes de comprar</h2>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>¿Sustituye al cepillado?</summary>
+            <p>
+              No. El irrigador se utiliza como complemento a tu rutina habitual
+              de higiene bucodental.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Es apto para encías sensibles?</summary>
+            <p>
+              Sí, especialmente si eliges niveles de presión suaves al empezar.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Sirve si llevo brackets?</summary>
+            <p>
+              Sí, es una opción muy útil para ayudar a limpiar mejor zonas
+              difíciles alrededor de la ortodoncia.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Cada cuánto se recomienda usar?</summary>
+            <p>
+              Puede incorporarse a la rutina diaria, normalmente una o dos veces
+              al día según tus necesidades.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Qué incluye el paquete?</summary>
+            <p>
+              Depende del modelo, pero normalmente incluye el irrigador, boquillas
+              y cable de carga.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Tenéis garantía?</summary>
+            <p>
+              Sí. Puedes indicar aquí la política exacta que quieras ofrecer a
+              tus clientes.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Cuánto tarda el envío?</summary>
+            <p>
+              Añade aquí el plazo real de entrega cuando lo tengas definido.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Puedo devolver el producto?</summary>
+            <p>
+              Sí, debes añadir aquí tu política de devoluciones y condiciones
+              aplicables.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt contact-section" id="contacto">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">Contacto</span>
+          <h2>Estamos aquí para ayudarte</h2>
+          <p>
+            Si tienes dudas sobre nuestros productos, envíos o devoluciones,
+            puedes escribirnos y te responderemos lo antes posible.
+          </p>
+
+          <div class="contact-info">
+            <p><strong>Email:</strong> contacto@cleansmile.com</p>
+            <p><strong>Atención:</strong> Lunes a viernes</p>
+            <p><strong>Zona:</strong> España</p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tuemail@ejemplo.com"
+            required
+          />
+
+          <label for="message">Mensaje</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Escribe tu mensaje"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          <p class="form-note" id="form-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#inicio" class="brand footer-brand">
+          <img src="logo-mini.png" alt="Logo CleanSmile" class="brand-logo" />
+          <span>Cleansmile</span>
+        </a>
+        <p class="footer-text">
+          Irrigadores bucales e higiene bucodental con una imagen profesional,
+          moderna y fiable.
+        </p>
+      </div>
+
+      <div>
+        <h4>Información</h4>
+        <ul>
+          <li><a href="#">Aviso legal</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Política de cookies</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Ayuda</h4>
+        <ul>
+          <li><a href="#">Envíos y devoluciones</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="card">
-      <h3>Fácil y cómodo</h3>
-      <p>Uso rápido y portátil en tu día a día.</p>
+
+    <div class="container footer-bottom">
+      <p>© 2026 CleanSmile. Todos los derechos reservados.</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section id="productos" class="destacados">
-  <h2>Productos</h2>
-  <div class="grid">
-
-    <div class="producto">
-      <img src="https://via.placeholder.com/250" alt="Irrigador portátil">
-      <h3>Irrigador portátil</h3>
-      <p>39,99 €</p>
-      <button onclick="comprar()">Comprar</button>
-    </div>
-
-    <div class="producto">
-      <img src="https://via.placeholder.com/250" alt="Irrigador premium">
-      <h3>Irrigador premium</h3>
-      <p>59,99 €</p>
-      <button onclick="comprar()">Comprar</button>
-    </div>
-
-  </div>
-</section>
-
-<section id="faq" class="faq">
-  <h2>Preguntas frecuentes</h2>
-
-  <div class="faq-item">
-    <h3>¿Sustituye al hilo dental?</h3>
-    <p>Es una alternativa muy eficaz, especialmente en personas con ortodoncia.</p>
-  </div>
-
-  <div class="faq-item">
-    <h3>¿Hace daño?</h3>
-    <p>No. Tiene diferentes niveles de presión adaptables.</p>
-  </div>
-
-  <div class="faq-item">
-    <h3>¿Cada cuánto se usa?</h3>
-    <p>Se recomienda uso diario, preferiblemente por la noche.</p>
-  </div>
-
-</section>
-
-<section id="contacto" class="contacto">
-  <h2>Contacto</h2>
-  <form onsubmit="enviarFormulario(event)">
-    <input type="text" placeholder="Nombre" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Mensaje" required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-</section>
-
-<footer>
-  <p>© 2026 CleanSmile - Todos los derechos reservados</p>
-</footer>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
