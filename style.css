@@ -595,10 +595,25 @@ ul {
   font-weight: 700;
 }
 
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.old-price {
+  color: #e53935 !important;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
 .price {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 800;
-  color: var(--primary);
+  color: #1e3a8a;
 }
 .price-box {
   display: flex;
