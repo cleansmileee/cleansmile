@@ -600,3 +600,27 @@ ul {
   font-weight: 800;
   color: var(--primary);
 }
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* PRECIO ANTIGUO */
+.old-price {
+  color: #e53935 !important;   /* rojo potente */
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* PRECIO NUEVO */
+.price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1e3a8a;
+}.old-price {
+  transform: rotate(-5deg);
+}
