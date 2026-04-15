@@ -4,19 +4,30 @@ const contactForm = document.getElementById("contact-form");
 const formMessage = document.getElementById("form-message");
 const buyButtons = document.querySelectorAll(".buy-btn");
 
-if (menuToggle) {
+/* Menú móvil */
+if (menuToggle && navLinks) {
   menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("open");
   });
+
+  document.querySelectorAll(".nav-links a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    const clickedInsideMenu = navLinks.contains(e.target);
+    const clickedToggle = menuToggle.contains(e.target);
+
+    if (!clickedInsideMenu && !clickedToggle) {
+      navLinks.classList.remove("open");
+    }
+  });
 }
 
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-  });
-});
-
-if (contactForm) {
+/* Formulario de contacto */
+if (contactForm && formMessage) {
   contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -26,9 +37,11 @@ if (contactForm) {
   });
 }
 
-buyButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const product = button.dataset.product || "producto";
-    alert(`Has seleccionado: ${product}. Aquí puedes enlazar el proceso de compra.`);
+/* Botón de compra */
+if (buyButtons.length > 0) {
+  buyButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      alert("Próximamente disponible. Estamos preparando el proceso de compra.");
+    });
   });
-});
+}
