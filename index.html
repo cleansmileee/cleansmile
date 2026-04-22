@@ -4,118 +4,492 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CleanSmile | Irrigador Bucal Portátil</title>
+  <meta
+    name="description"
+    content="Irrigador Bucal Portátil CleanSmile. Limpieza profunda, diseño portátil y promoción de lanzamiento."
+  />
+  <meta name="theme-color" content="#1e3a8a" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        <img src="logo-mini.png" alt="Logo CleanSmile" class="brand-logo" />
+        <span>Cleansmile</span>
+      </a>
 
-<header class="header">
-  <div class="container nav">
-    <div class="brand">
-      <img src="logo-mini.png" class="brand-logo">
-      <span>Cleansmile</span>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#beneficios">Beneficios</a>
+        <a href="#incluye">Qué incluye</a>
+        <a href="#confianza">Compra segura</a>
+        <a href="#faq">FAQ</a>
+        <a href="#comprar" class="btn btn-primary nav-btn">Comprar</a>
+      </nav>
     </div>
-  </div>
-</header>
+  </header>
 
-<section class="hero">
-  <div class="container hero-grid">
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Tecnologia que cuida tu sonrisa</span>
 
-    <div>
-      <h1>Irrigador bucal portátil</h1>
-      <p>Mejora tu higiene diaria con una limpieza profunda y cómoda.</p>
+          <h1>Irrigador Bucal Portátil para una limpieza más profunda y cómoda</h1>
 
-      <div class="price-box">
-        <span class="old-price">29,99€</span>
-        <span class="price">24,99€</span>
+          <p class="hero-text">
+            Mejora tu rutina diaria con un irrigador diseñado para ayudarte a limpiar
+            mejor entre dientes y alrededor de las encías. Ideal para uso diario,
+            ortodoncia y encías sensibles.
+          </p>
+
+          <div class="hero-points">
+            <span>3 modos de uso</span>
+            <span>4 cabezales</span>
+            <span>Diseño portátil</span>
+            <span>Uso sencillo</span>
+          </div>
+
+          <div class="hero-price">
+            <div class="price-box">
+              <span class="old-price">29,99 €</span>
+              <span class="price">24,99 €</span>
+            </div>
+            <span class="offer-pill">Promoción de lanzamiento</span>
+          </div>
+
+          <div class="hero-actions">
+            <a
+              href="https://wa.me/34678644506?text=Hola,%20quiero%20comprar%20el%20Irrigador%20Bucal%20Port%C3%A1til%20CleanSmile%20por%2024,99%E2%82%AC"
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Comprar ahora
+            </a>
+
+            <a href="#beneficios" class="btn btn-secondary">Ver detalles</a>
+          </div>
+
+          <div class="trust-row">
+            <div>Compra por WhatsApp</div>
+            <div>Pago por Bizum</div>
+            <div>Envíos en España</div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <img
+              src="img/hero.jpg"
+              alt="Irrigador Bucal Portátil CleanSmile"
+              class="hero-image"
+            />
+          </div>
+        </div>
       </div>
+    </section>
 
-      <a href="https://wa.me/34678644506?text=Hola%20quiero%20comprar%20el%20irrigador"
-         class="btn btn-primary">Comprar ahora</a>
+    <!-- BENEFICIOS -->
+    <section class="section section-soft" id="beneficios">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Beneficios</span>
+          <h2>Una rutina más profesional desde casa</h2>
+          <p>
+            Diseñado para ofrecer una limpieza más completa con un formato cómodo,
+            moderno y fácil de usar.
+          </p>
+        </div>
+
+        <div class="benefit-cards">
+          <article class="benefit-card">
+            <h3>Limpieza profunda</h3>
+            <p>
+              Ayuda a mejorar la limpieza en zonas donde el cepillo no llega con facilidad.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <h3>Ideal para ortodoncia</h3>
+            <p>
+              Muy útil para rutinas con brackets o para zonas difíciles.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <h3>Más cómodo</h3>
+            <p>
+              Ligero, intuitivo y pensado para usar a diario sin complicaciones.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <h3>Portátil</h3>
+            <p>
+              Perfecto para casa, viajes y una rutina práctica en cualquier lugar.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOQUE VISUAL 1 -->
+    <section class="image-section">
+      <div class="container image-section-grid">
+        <div class="image-copy">
+          <span class="eyebrow">Limpieza diaria</span>
+          <h2>Diseñado para una sensación de frescor y limpieza real</h2>
+          <p>
+            Su formato portátil y sus distintos modos permiten una experiencia
+            más cómoda desde el primer uso.
+          </p>
+
+          <ul class="bullet-list">
+            <li>Fácil de usar</li>
+            <li>Depósito práctico</li>
+            <li>Diseño limpio y moderno</li>
+          </ul>
+        </div>
+
+        <div class="image-card">
+          <img
+            src="img/beneficios.jpg"
+            alt="Beneficios del irrigador CleanSmile"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- LIMPIEZA -->
+    <section class="full-image-section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Cómo ayuda</span>
+          <h2>Una mejora real en tu higiene bucodental</h2>
+        </div>
+
+        <div class="poster-card">
+          <img
+            src="img/limpieza.jpg"
+            alt="Limpieza con irrigador CleanSmile"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- MODOS -->
+    <section class="full-image-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">3 modos</span>
+          <h2>Una intensidad para cada necesidad</h2>
+        </div>
+
+        <div class="poster-card">
+          <img
+            src="img/modos.jpg"
+            alt="Modos del irrigador CleanSmile"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- QUE INCLUYE -->
+    <section class="full-image-section section-soft" id="incluye">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Qué incluye</span>
+          <h2>Todo lo necesario para empezar</h2>
+        </div>
+
+        <div class="poster-card">
+          <img
+            src="img/incluye.jpg"
+            alt="Qué incluye la caja del irrigador CleanSmile"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CABEZALES Y PASOS -->
+    <section class="two-image-section">
+      <div class="container two-image-grid">
+        <div class="poster-card">
+          <img
+            src="img/cabezales.jpg"
+            alt="Cabezales del irrigador CleanSmile"
+          />
+        </div>
+
+        <div class="poster-card">
+          <img
+            src="img/pasos.jpg"
+            alt="Cómo usar el irrigador CleanSmile"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- DETALLES -->
+    <section class="two-image-section section-soft">
+      <div class="container two-image-grid">
+        <div class="poster-card">
+          <img
+            src="img/detalle1.jpg"
+            alt="Detalle del irrigador CleanSmile"
+          />
+        </div>
+
+        <div class="poster-card">
+          <img
+            src="img/detalle2.jpg"
+            alt="Más detalles del irrigador CleanSmile"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section class="full-image-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Resultado</span>
+          <h2>Una pequeña mejora que cambia tu rutina</h2>
+        </div>
+
+        <div class="poster-card">
+          <img
+            src="img/antes-despues.jpg"
+            alt="Antes y después con irrigador CleanSmile"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFIANZA -->
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Confianza</span>
+          <h2>Todo pensado para que la compra sea sencilla</h2>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>Web en español</h3>
+            <p>
+              Contenido claro, directo y orientado a cliente en España.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Compra por WhatsApp</h3>
+            <p>
+              El cliente puede hacer preguntas y cerrar la compra sin fricción.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Envíos</h3>
+            <p>
+              Puedes indicar entrega 24/48 h y seguimiento del pedido.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Imagen profesional</h3>
+            <p>
+              Diseño visual limpio y serio para transmitir más confianza.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENVÍOS / DEVOLUCIONES / BIZUM / SEGURIDAD -->
+    <section class="section trust-extra-section" id="confianza">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Compra con confianza</span>
+          <h2>Envíos, devoluciones y pago seguro</h2>
+          <p>
+            Queremos que comprar en CleanSmile sea fácil, claro y sin complicaciones.
+          </p>
+        </div>
+
+        <div class="trust-extra-grid">
+          <article class="trust-extra-card">
+            <h3>Envíos</h3>
+            <p>
+              Realizamos envíos en España con preparación rápida del pedido. Una vez
+              confirmado, te informaremos del estado y seguimiento de tu envío.
+            </p>
+            <ul>
+              <li>Envíos en España</li>
+              <li>Preparación rápida</li>
+              <li>Seguimiento del pedido</li>
+            </ul>
+          </article>
+
+          <article class="trust-extra-card">
+            <h3>Devoluciones</h3>
+            <p>
+              Si tienes cualquier incidencia con tu pedido, puedes escribirnos por
+              WhatsApp y te ayudaremos a resolverlo lo antes posible.
+            </p>
+            <ul>
+              <li>Atención personalizada</li>
+              <li>Soporte postventa</li>
+              <li>Resolución de incidencias</li>
+            </ul>
+          </article>
+
+          <article class="trust-extra-card">
+            <h3>Pago por Bizum o WhatsApp</h3>
+            <p>
+              Puedes reservar tu pedido directamente por WhatsApp. Si lo prefieres,
+              también puedes realizar el pago por Bizum de forma rápida y cómoda.
+            </p>
+            <ul>
+              <li>Compra rápida por WhatsApp</li>
+              <li>Pago por Bizum</li>
+              <li>Atención directa</li>
+            </ul>
+          </article>
+
+          <article class="trust-extra-card">
+            <h3>Compra segura</h3>
+            <p>
+              Te acompañamos durante todo el proceso de compra para que sepas qué
+              estás comprando, cuánto cuesta y cómo recibirás tu pedido.
+            </p>
+            <ul>
+              <li>Precio claro</li>
+              <li>Comunicación directa</li>
+              <li>Proceso sencillo y transparente</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Resolvemos tus dudas</h2>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>¿Sustituye al cepillado?</summary>
+            <p>
+              No. Se usa como complemento a tu higiene diaria.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Sirve si llevo brackets?</summary>
+            <p>
+              Sí, es especialmente útil en rutinas con ortodoncia.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Es apto para encías sensibles?</summary>
+            <p>
+              Sí, empezando por una intensidad suave.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Qué incluye el paquete?</summary>
+            <p>
+              Irrigador, cabezales y accesorios según el pack que indiques en tu oferta.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Cómo se hace el envío?</summary>
+            <p>
+              Puedes gestionarlo con Correos, InPost o mensajería 24/48h dentro de España.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Cómo se paga?</summary>
+            <p>
+              La compra se gestiona por WhatsApp y puedes acordar el pago por Bizum
+              de forma rápida y sencilla.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="final-cta" id="comprar">
+      <div class="container final-cta-card">
+        <div class="final-copy">
+          <span class="eyebrow">Promoción activa</span>
+          <h2>Consigue tu irrigador CleanSmile por 24,99 €</h2>
+          <p>
+            Promoción de lanzamiento para empezar a vender ya con una página
+            profesional, clara y enfocada a conversión.
+          </p>
+        </div>
+
+        <div class="final-buy-box">
+          <div class="price-box">
+            <span class="old-price">29,99 €</span>
+            <span class="price">24,99 €</span>
+          </div>
+
+          <a
+            href="https://wa.me/34678644506?text=Hola,%20quiero%20comprar%20el%20Irrigador%20Bucal%20Port%C3%A1til%20CleanSmile%20por%2024,99%E2%82%AC"
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Comprar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BARRA FIJA MOVIL -->
+  <div class="mobile-buybar">
+    <div class="mobile-price">
+      <span class="old-price">29,99 €</span>
+      <span class="price">24,99 €</span>
     </div>
 
-    <img src="img/hero.jpg">
+    <a
+      href="https://wa.me/34678644506?text=Hola,%20quiero%20comprar%20el%20Irrigador%20Bucal%20Port%C3%A1til%20CleanSmile%20por%2024,99%E2%82%AC"
+      class="btn btn-primary"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Comprar
+    </a>
   </div>
-</section>
 
-<section class="section">
-  <h2>Beneficios</h2>
-  <img src="img/beneficios.jpg">
-</section>
-
-<section class="section alt">
-  <h2>Cómo funciona</h2>
-  <img src="img/limpieza.jpg">
-</section>
-
-<section class="section">
-  <h2>Modos</h2>
-  <img src="img/modos.jpg">
-</section>
-
-<section class="section alt">
-  <h2>Qué incluye</h2>
-  <img src="img/incluye.jpg">
-</section>
-
-<section class="section">
-  <img src="img/cabezales.jpg">
-  <img src="img/pasos.jpg">
-</section>
-
-<section class="section alt">
-  <img src="img/detalle1.jpg">
-  <img src="img/detalle2.jpg">
-</section>
-
-<section class="section">
-  <h2>Resultados</h2>
-  <img src="img/antes-despues.jpg">
-</section>
-
-<!-- 🔥 BLOQUE CONFIANZA -->
-<section class="section trust-extra">
-  <h2>Compra con confianza</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>Envíos</h3>
-      <p>Envíos en toda España con entrega rápida y seguimiento del pedido.</p>
-    </div>
-
-    <div class="card">
-      <h3>Devoluciones</h3>
-      <p>Atención personalizada si tienes cualquier problema con tu pedido.</p>
-    </div>
-
-    <div class="card">
-      <h3>Pago fácil</h3>
-      <p>Compra por WhatsApp y paga por Bizum de forma rápida y segura.</p>
-    </div>
-
-    <div class="card">
-      <h3>Compra segura</h3>
-      <p>Proceso claro, atención directa y sin complicaciones.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- CTA FINAL -->
-<section class="cta">
-  <h2>Consigue el tuyo hoy</h2>
-
-  <div class="price-box">
-    <span class="old-price">29,99€</span>
-    <span class="price">24,99€</span>
-  </div>
-
-  <a href="https://wa.me/34678644506?text=Hola%20quiero%20comprar%20el%20irrigador"
-     class="btn btn-primary">Comprar ahora</a>
-</section>
-
+  <script src="script.js"></script>
 </body>
 </html>
