@@ -243,7 +243,8 @@ button {
 .image-card,
 .benefit-card,
 .info-card,
-.final-cta-card {
+.final-cta-card,
+.trust-extra-card {
   background: white;
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -351,6 +352,53 @@ button {
   color: var(--text-soft);
 }
 
+/* TRUST EXTRA */
+.trust-extra-section {
+  background: #ffffff;
+}
+
+.trust-extra-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.trust-extra-card {
+  padding: 28px;
+}
+
+.trust-extra-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.trust-extra-card p {
+  color: var(--text-soft);
+  margin-bottom: 16px;
+}
+
+.trust-extra-card ul {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.trust-extra-card li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--text);
+}
+
+.trust-extra-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary-light);
+  font-weight: bold;
+}
+
 /* FAQ */
 .faq-list {
   max-width: 900px;
@@ -455,7 +503,8 @@ button {
   .benefit-cards,
   .info-grid,
   .two-image-grid,
-  .final-cta-card {
+  .final-cta-card,
+  .trust-extra-grid {
     grid-template-columns: 1fr;
   }
 
@@ -477,6 +526,10 @@ button {
 
   .benefit-cards,
   .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trust-extra-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -533,7 +586,8 @@ button {
   }
 
   .benefit-cards,
-  .info-grid {
+  .info-grid,
+  .trust-extra-grid {
     grid-template-columns: 1fr;
   }
 
