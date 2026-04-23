@@ -271,7 +271,8 @@ button {
 .final-cta-card,
 .trust-extra-card,
 .review-card,
-.step-card {
+.step-card,
+.mini-cta-box {
   background: white;
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -290,6 +291,33 @@ button {
   background: #f8fbff;
   border-radius: 20px;
   padding: 12px;
+}
+
+/* MINI CTA */
+.mini-cta {
+  padding: 22px 0 0;
+}
+
+.mini-cta-box {
+  padding: 22px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mini-cta-label {
+  color: var(--primary-light);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.82rem;
+  margin-bottom: 4px;
+}
+
+.mini-cta-box h2 {
+  font-size: 1.7rem;
+  line-height: 1.15;
 }
 
 /* GENERAL BLOCKS */
@@ -333,8 +361,7 @@ button {
   display: block;
 }
 
-.full-image-section,
-.two-image-section {
+.full-image-section {
   padding: 88px 0;
 }
 
@@ -636,8 +663,13 @@ button {
 @media (max-width: 1024px) {
   .hero-grid,
   .image-section-grid,
-  .final-cta-card {
+  .final-cta-card,
+  .mini-cta-box {
     grid-template-columns: 1fr;
+  }
+
+  .mini-cta-box {
+    display: grid;
   }
 
   .benefit-cards,
@@ -750,5 +782,9 @@ button {
 
   .footer {
     padding-bottom: 130px;
+  }
+
+  .mini-cta-box h2 {
+    font-size: 1.35rem;
   }
 }
