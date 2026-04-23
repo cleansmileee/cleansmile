@@ -11,6 +11,7 @@
   --max-width: 1180px;
   --danger: #e53935;
   --success-soft: #eef6ff;
+  --whatsapp: #25d366;
 }
 
 * {
@@ -341,12 +342,6 @@ button {
   padding: 16px;
 }
 
-.two-image-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-}
-
 /* BENEFITS / INFO */
 .benefit-cards,
 .info-grid {
@@ -545,8 +540,20 @@ button {
 
 .final-buy-box {
   display: grid;
-  gap: 14px;
+  gap: 12px;
   justify-items: end;
+  text-align: right;
+}
+
+.urgencia {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+.garantia {
+  color: var(--text-soft);
+  font-size: 0.94rem;
+  max-width: 420px;
 }
 
 /* PRICE */
@@ -570,6 +577,22 @@ button {
   color: var(--primary);
 }
 
+/* FOOTER */
+.footer {
+  background: #0f1f47;
+  color: rgba(255, 255, 255, 0.88);
+  padding: 24px 0 110px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
 /* MOBILE BUY BAR */
 .mobile-buybar {
   position: fixed;
@@ -591,11 +614,28 @@ button {
   display: grid;
 }
 
+/* FLOAT WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 108px;
+  right: 20px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--whatsapp);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  box-shadow: 0 12px 24px rgba(37, 211, 102, 0.28);
+  z-index: 1000;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .hero-grid,
   .image-section-grid,
-  .two-image-grid,
   .final-cta-card {
     grid-template-columns: 1fr;
   }
@@ -617,6 +657,7 @@ button {
 
   .final-buy-box {
     justify-items: start;
+    text-align: left;
   }
 
   .nav-links {
@@ -674,7 +715,6 @@ button {
   .section,
   .image-section,
   .full-image-section,
-  .two-image-section,
   .final-cta {
     padding: 64px 0;
   }
@@ -698,5 +738,17 @@ button {
   .top-bar {
     font-size: 0.82rem;
     padding: 8px 10px;
+  }
+
+  .whatsapp-float {
+    bottom: 96px;
+    right: 16px;
+    width: 54px;
+    height: 54px;
+    font-size: 24px;
+  }
+
+  .footer {
+    padding-bottom: 130px;
   }
 }
